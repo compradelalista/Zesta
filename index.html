@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cesta · Lista de la compra</title>
+  <meta name="description" content="Lista de la compra simple: dictado por voz, plantillas, compartir y presupuesto estimado.">
+  <meta name="theme-color" content="#1f8a4c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cesta">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top" id="hdr" hidden>
+    <button class="title-btn" id="hdrTitle" data-act="title"></button>
+    <button class="icon-btn" id="shareBtn" data-act="share" aria-label="Compartir lista"></button>
+    <button class="avatar" id="userBtn" data-act="tab" data-tab="settings" aria-label="Usuario y ajustes"></button>
+  </header>
+  <main id="view"></main>
+  <nav class="tabs" id="tabs" hidden></nav>
+  <div class="sheet" id="sheet" hidden><div class="sheet-card" id="sheetCard" role="dialog" aria-modal="true"></div></div>
+  <div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+  <noscript><p style="padding:24px">Cesta necesita JavaScript activado.</p></noscript>
+  <script src="prices.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
